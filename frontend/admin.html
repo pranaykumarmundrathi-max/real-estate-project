@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🏢 Admin</h2>
+  <a href="admin.html">📊 Dashboard</a>
+  <a href="executive.html">📋 Executive</a>
+  <a href="inside.html">📞 Inside</a>
+  <a href="outside.html">🚗 Outside</a>
+  <a href="customers.html">👥 Customers</a>
+  <a href="settings.html">⚙ Settings</a>
+  <a href="login.html">🚪 Logout</a>
+  <a href="attendance.html">📅Attendence</a>
+</div>
+
+<div class="main">
+  <h1>📊 Admin Dashboard</h1>
+
+  <div class="card">
+    <h3>➕ Add Employee</h3>
+    <input id="name" placeholder="Name">
+    <input id="email" placeholder="Email">
+    <input id="password" placeholder="Password">
+
+    <select id="role">
+      <option value="inside">Inside</option>
+      <option value="outside">Outside</option>
+    </select>
+
+    <button onclick="addEmployee()">Add</button>
+  </div>
+
+  <div class="card">
+    <h3>👨‍💼 Employees</h3>
+    <div id="list"></div>
+  </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
