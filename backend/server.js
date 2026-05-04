@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://pranaykumarmundrathi345_db_user:Pranay12345@clus
 app.use("/login", require("./routes/auth"));
 app.use("/", require("./routes/users"));
 app.use("/", require("./routes/customers"));
-app.use("/", require("./routes/visits"));g
+app.use("/", require("./routes/visits"));
 app.use("/", require("./routes/settings"));
 app.use("/", require("./routes/attendance"));
 
