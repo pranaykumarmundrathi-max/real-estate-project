@@ -33,5 +33,10 @@ router.get("/employees", async (req, res) => {
         res.status(500).send("Error");
     }
 });
-
+User.create({
+    name: "Admin",
+    email: "admin@gmail.com",
+    password: "1234",
+    role: "admin"
+});
 module.exports = router;
