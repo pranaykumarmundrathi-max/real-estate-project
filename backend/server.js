@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://pranaykumarmundrathi_db_user:<db_password>@cluster0.eifyyg1.mongodb.net/?appName=Cluster0/realestate")
+mongoose.connect("mongodb+srv://pranaykumarmundrathi345_db_user:Pranay12345@cluster0.eifyyg1.mongodb.net/realestate?retryWrites=true&w=majority")
 .then(() => console.log("DB Connected"))
 .catch(err => console.log(err));
 
