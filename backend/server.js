@@ -18,8 +18,6 @@ app.use("/", require("./routes/visits"));
 app.use("/", require("./routes/settings"));
 app.use("/", require("./routes/attendance"));
 
-
-
 app.get("/", (req, res) => {
     res.send("Server Running");
 });

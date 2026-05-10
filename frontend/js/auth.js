@@ -4,7 +4,7 @@ async function login() {
 
   try {
     const res = await 
-fetch("http://real-estate-project-wstj.onrender.com/login", {
+fetch("https://real-estate-project-wstj.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
