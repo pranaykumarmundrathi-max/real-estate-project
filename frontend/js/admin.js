@@ -4,7 +4,7 @@ async function addEmployee() {
     const password = document.getElementById("password").value;
     const role = document.getElementById("role").value;
 
-    await fetch("https://yourproject.onrender.com/addEmployee", {
+    await fetch("https://real-estate-backend.onrender.com/addEmployee", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -22,7 +22,7 @@ async function addEmployee() {
 }
 
 async function loadEmployees() {
-    const res = await fetch("https://yourproject.onrender.com/employees");
+    const res = await fetch("https://real-estate-backend.onrender.com/employees");
     const data = await res.json();
 
     document.getElementById("list").innerHTML = data.map(e =>
